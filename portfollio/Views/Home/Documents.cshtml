@@ -69,6 +69,10 @@
         cursor: pointer;
     }
 
+        .popup-button:hover {
+            background-color: #2E6CB4; /* Nuance de bleu similaire à la barre de navigation */
+        }
+
         .popup-button:focus {
             outline: none;
         }
@@ -77,9 +81,22 @@
             outline: none;
         }
 </style>
-<style>
-    /* ... Votre style actuel ... */
-</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets et Documents</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-8 bg-white rounded-lg shadow-lg my-8">
+        <h1 class="text-3xl font-bold mb-4">Mes Projets et Documents</h1>
+        <p class="text-gray-700">Bienvenue dans la section où vous pouvez découvrir mes différents projets et documents. Explorez les téléchargements disponibles ci-dessous.</p>
+    </div>
 
 <div class="container">
     <div class="card">
@@ -100,9 +117,9 @@
         </button>
     </div>
     <div class="card">
-        <h2>Fiche de Synthèse</h2>
+        <h2>Tableau de Synthèse</h2>
         <img src="https://cohen-boulakia-avocat.fr/wp-content/uploads/2021/09/plan-type-note-de-synthese-crfpa.png" alt="Image 3">
-        <p>Description de la fiche de synthèse.</p>
+       
         <button class="popup-button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="openPopup(this)" data-title="Fiche de Synthèse" data-content="Contenu de la fiche de synthèse.">
             Télécharger
         </button>
@@ -113,7 +130,7 @@
     <div class="card">
         <h2>Bibliothèque API</h2>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDWm-Xn5VTC9E-m_uDENVSAnDWx8nvA4SFQ&usqp=CAU" alt="Image 4">
-        <p>Description de la bibliothèque API.</p>
+       
         <button class="popup-button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="openPopup(this)" data-title="Bibliothèque API" data-content="Contenu de la bibliothèque API.">
             Télécharger
         </button>
@@ -132,7 +149,9 @@
 </div>
 
 <div class="overlay" id="overlay" onclick="closePopup()"></div>
+</body>
 
+</html>
 <script>
 
 </script>
