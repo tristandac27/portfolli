@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\7a8f6fe1-3062-47be-bc09-79221d2b9e57.png" />
     <None Include="wwwroot\css\CV.pdf" />
     <None Include="wwwroot\GLPI.png" />
   </ItemGroup>

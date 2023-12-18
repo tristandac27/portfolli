@@ -1,74 +1,98 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portfolio</title>
     <meta charset="utf-8">
-    <link href="/css/Index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="profile-section">
-        <img class="profile-image" src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-simple-cartoon-character-office-worker-man-cute-character-q-version-of-png-image_491197.jpg" alt="Profile Image">
-        <h1 class="welcome-text">Bienvenue dans mon portfolio !</h1>
-        <p class="intro-text">Venez me découvrir</p>
-    </div>
+<body class="bg-gray-100">
 
-    <div class="education-section">
-        <h2 class="section-title">Qui suis-je ?</h2><p class="stage-text">
-            <h3 class="school-name">
-       
-            Je m'appelle Tristan DACIER, je suis un étudiant en 1ère année de BTS SIO (Service Informatique aux Organisations) à l'ipssi de Saint-Quentin-en-Yvelines. Je suis passionné de technologie et d'informatique.
-            J'ai passé mon Baccalauréat STMG RHC au lycée Louis Bascan.
-            Mon changement de filière est dû au fait que la programmation m'intéressait plus que les ressources humaines et la communication.
-        </p>
-        <div class="about-section">
-            <h2 class="section-title">lES OPTIONS DE BTS</h2>
-            <p class="stage-text">
-                <h3 class="school-name">
-    <p>Brevet du Technicien Supérieur Services Informatiques aux Organisations se prépare sur une période de deux ans et s'adresse aux personnes qui souhaitent devenir développeur ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, j'ai choisi de faire un BTS SIO pour m'orienter dans la seconde option. Pendant la première année, j'ai suivi des cours en développement et en réseau, mon choix s'est ainsi confirmé sur l'option SLAM.</p>
-            <p class="about-text" <h2>Option SISR</h2>
-                    <p class="about-text"<p class="stage-text">
-                        <h3 class="school-name">
-    <p>Débouchés : Technicien de production Technicien d’infrastructure Technicien réseau et télécoms Technicien systèmes et réseaux Administrateur systèmes et réseaux Support systèmes et réseaux Pilote d’exploitation Informaticien support et déploiement</p>
-            <p class="about-text"
-                            <p class="stage-text">
-                                <h3 class="school-name">
-    <h2>Option SLAM</h2>
-    <p class="about-text"
-                                    <p class="stage-text">
-                                        <h3 class="school-name">
-    <p>Débouchés : Développeur d'applications informatiques Développeur informatique Analyste d'applications ou d'études Analyste programmeur Chargé d'études informatiques Informaticien d'études Programmeur analyste Programmeur d'applications Responsable des services applicatifs Technicien d'études informatiques</p>
-    </div>
-    <div class="education-section">
-        <h2 class="section-title">Mon parcours scolaire</h2>
-        <div class="school">
-            <h3 class="school-name">BAC STMG RHC - Lycée Louis Bascan, Rambouillet</h3>
-            <img class="school-image" src="data:image/jpeg;base64,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" />
+    <!-- Section de profil -->
+    <div class="container mx-auto p-8 mt-8 bg-white shadow-md rounded-md">
+        <div class="text-center">
+            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-simple-cartoon-character-office-worker-man-cute-character-q-version-of-png-image_491197.jpg" alt="Profile Image">
+            <h1 class="text-2xl font-bold text-gray-800">Bienvenue dans mon portfolio !</h1>
+            <p class="text-gray-600">Venez me découvrir</p>
         </div>
     </div>
 
-    <div class="education-section">
-        <h2 class="section-title">Mon stage</h2>
-        <p class="stage-text">
-            <h3 class="school-name">
-            J'ai effectué mon stage chez Siclade Informatique où j'ai travaillé sur le développement d'un site web. J'ai acquis de précieuses compétences en programmation et en collaboration avec une équipe de développeurs.
-        </p> </h3>
-        <img class="stage-image" src="https://cdn.discordapp.com/attachments/1090038981976141864/1110875639843663912/logosiclade-removebg-preview1.png" alt="Mon stage">
+    <!-- Section d'éducation -->
+    <div class="container mx-auto p-8 mt-8 bg-white shadow-md rounded-md">
+        <div>
+            <h2 class="text-2xl font-bold text-gray-800">Qui suis-je ?</h2>
+            <p class="text-gray-700 mt-4">
+                Je m'appelle Tristan DACIER, étudiant en 1ère année de BTS SIO (Service Informatique aux Organisations) à l'IPSSI de Saint-Quentin-en-Yvelines. Passionné de technologie et d'informatique, j'ai passé mon Baccalauréat STMG RHC au lycée Louis Bascan. Mon changement de filière est dû au fait que la programmation m'intéressait plus que les ressources humaines et la communication.
+            </p>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800">Les options de BTS</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-bold text-gray-700">Option SISR</h3>
+                <p class="text-gray-700">
+                    Débouchés : Technicien de production, Technicien d’infrastructure, Technicien réseau et télécoms, Technicien systèmes et réseaux, Administrateur systèmes et réseaux, Support systèmes et réseaux, Pilote d’exploitation, Informaticien support et déploiement.
+                </p>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="text-xl font-bold text-gray-700">Option SLAM</h3>
+                <p class="text-gray-700">
+                    Débouchés : Développeur d'applications informatiques, Développeur informatique, Analyste d'applications ou d'études, Analyste programmeur, Chargé d'études informatiques, Informaticien d'études, Programmeur analyste, Programmeur d'applications, Responsable des services applicatifs, Technicien d'études informatiques.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800">Mon parcours scolaire</h2>
+            <div class="mt-4">
+                <h3 class="text-xl font-bold text-gray-700">BAC STMG RHC - Lycée Louis Bascan, Rambouillet</h3>
+                <img class="w-40 h-40 mt-4 rounded" src="https://lyc-bascan.fr/wp-content/uploads/2022/02/logo_presentation_lycee_bascan.png" alt="Bac STMG RHC">
+            </div>
+        </div>
+
+    </div>
+    <!-- Section de stages -->
+    <div class="container mx-auto p-8 mt-8 bg-white shadow-md rounded-md">
+        <h2 class="text-2xl font-bold text-gray-800">Mes Stages</h2>
+
+        <!-- Stage chez Siclade -->
+        <div class="mt-4">
+            <h3 class="text-xl font-bold text-gray-700">Stage chez Siclade</h3>
+            <p class="text-gray-600">J'ai effectué un stage chez Siclade en tant que développeur web. Pendant cette période, j'ai eu l'opportunité de travailler sur des projets passionnants et d'acquérir une expérience pratique dans le développement web.</p>
+            <img class="w-64 h-64 mt-4 rounded" src="https://cdn.discordapp.com/attachments/1090038981976141864/1186336280091566230/7a8f6fe1-3062-47be-bc09-79221d2b9e57.png?ex=6592e0c2&is=65806bc2&hm=6ab59d4cec808fd36d116ff1988e9081381624ed812f9f8b881e64befd17460b&" alt="Stage chez Siclade">
+        </div>
+
+        <!-- Alternance dans la même entreprise -->
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800">Alternance chez Siclade</h2>
+            <p class="text-gray-600">
+                Actuellement, je poursuis mon parcours en alternance chez Siclade en tant que Developpeur . Cette expérience m'a permis de consolider mes compétences et d'appliquer mes connaissances académiques dans un environnement professionnel.
+            </p>
+        </div>
     </div>
 
-        <!-- Ajout du cadre avec les informations -->
-        <div class="border-t-2 border-b-2 border-gray-300 mt-6 p-4">
-            <h3 class="text-xl font-bold mb-2">Mes coordonnées</h3>
-            <p class="text-gray-600">Email: tristan.dacier@gmail.com</p>
-            <p class="text-gray-600">Téléphone: =06 40 69 27 26</p>
-            <!-- Ajoutez d'autres informations si nécessaire -->
+    <!-- Section de compétences -->
+    <div class="container mx-auto p-8 mt-8 bg-white shadow-md rounded-md">
+        <h2 class="text-2xl font-bold text-gray-800">Mes compétences</h2>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-200 p-4 rounded-md">
+                <h3 class="text-xl font-bold text-gray-700">Langages de programmation</h3>
+                <p class="text-gray-600">C, Java, Python</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded-md">
+                <h3 class="text-xl font-bold text-gray-700">Développement Web</h3>
+                <p class="text-gray-600">HTML, CSS, JavaScript</p>
+            </div>
+            <div class="bg-gray-200 p-4 rounded-md">
+                <h3 class="text-xl font-bold text-gray-700">Bases de données</h3>
+                <p class="text-gray-600">MySQL, Azur</p>
+            </div>
+            <!-- Ajoutez d'autres compétences au besoin -->
         </div>
+    </div>
+
+    <!-- Ajoutez d'autres sections au besoin -->
+
 </body>
 </html>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-</style>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trist\\source\\repos\\portfollio\\portfollio\\portfollio.csproj": {}
+    "C:\\Users\\trist\\Desktop\\portfolio\\portfolli\\portfollio\\portfollio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trist\\source\\repos\\portfollio\\portfollio\\portfollio.csproj": {
+    "C:\\Users\\trist\\Desktop\\portfolio\\portfolli\\portfollio\\portfollio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trist\\source\\repos\\portfollio\\portfollio\\portfollio.csproj",
+        "projectUniqueName": "C:\\Users\\trist\\Desktop\\portfolio\\portfolli\\portfollio\\portfollio.csproj",
         "projectName": "portfollio",
-        "projectPath": "C:\\Users\\trist\\source\\repos\\portfollio\\portfollio\\portfollio.csproj",
+        "projectPath": "C:\\Users\\trist\\Desktop\\portfolio\\portfolli\\portfollio\\portfollio.csproj",
         "packagesPath": "C:\\Users\\trist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trist\\source\\repos\\portfollio\\portfollio\\obj\\",
+        "outputPath": "C:\\Users\\trist\\Desktop\\portfolio\\portfolli\\portfollio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\trist\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
