@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <div class="background-image"></div>
+    <div class="overlay-text">
+        <h1>Votre texte ici</h1>
+        <p>Autres contenus textuels</p>
+    </div>
+</div>
+
+<style>
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://thumbs.gfycat.com/AffectionateDesertedGoa-max-1mb.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1; /* Assurez-vous que l'image est en arrière-plan */
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+        color: #fff; /* Couleur du texte */
+    }
+</style>

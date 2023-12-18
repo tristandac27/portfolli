@@ -1,0 +1,165 @@
+﻿<style>
+    .card {
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+        width: 400px;
+        margin: 10px;
+        z-index: 9999;
+    }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+        width: 400px;
+        z-index: 9999;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .popup-content {
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .popup-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .popup-button:focus {
+            outline: none;
+        }
+
+        .popup-button:active {
+            outline: none;
+        }
+</style>
+<div class="container">
+    <div class="card">
+        <h2>Projet GLPI</h2>
+        <img src="~/GLPI.png" alt="Image 1">
+        <p> </p>
+        <button class="popup-button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="openPopup(this)" data-title="Projet GLPI" data-content="GLPI (Gestionnaire Libre de Parc Informatique) est une solution open source de gestion de parc informatique et de service desk. Il s'agit d'un outil puissant qui permet aux organisations de suivre, gérer et résoudre les problèmes liés aux ressources informatiques et aux demandes de support technique.
+
+            GLPI fonctionne de manière modulaire et offre plusieurs fonctionnalités clés pour faciliter la gestion des ressources informatiques
+            Gestion des actifs : GLPI permet de gérer efficacement l'inventaire des équipements informatiques tels que les ordinateurs, les serveurs, les imprimantes, les logiciels, etc. Il fournit des fonctionnalités telles que la création de fiches d'inventaire, l'attribution d'utilisateurs, la gestion des garanties et l'historique des mouvements.
+
+            Service Desk : GLPI intègre un système de ticketing pour la gestion des demandes d'assistance et des incidents. Les utilisateurs peuvent soumettre des requêtes via une interface web ou par e-mail, et les techniciens peuvent suivre et résoudre ces tickets de manière collaborative. GLPI propose également des fonctionnalités de gestion des SLA (Service Level Agreements) pour garantir des délais de résolution appropriés.
+
+            Gestion des contrats : GLPI permet de gérer les contrats liés aux ressources informatiques, tels que les contrats de maintenance, de licence logicielle, etc. Il permet de suivre les échéances, les fournisseurs et les conditions contractuelles.
+
+            Gestion des connaissances : GLPI offre un espace de gestion des connaissances où les utilisateurs peuvent partager des informations utiles, des procédures et des FAQ. Cela favorise la résolution rapide des problèmes et permet d'améliorer la productivité globale de l'organisation.
+
+            Reporting et statistiques : GLPI fournit des fonctionnalités de reporting pour générer des rapports personnalisés sur les actifs, les tickets résolus, les coûts, etc. Ces informations aident les gestionnaires à prendre des décisions éclairées en matière de gestion des ressources informatiques.
+
+            Le fonctionnement de GLPI repose sur une architecture client-serveur. Le serveur héberge la base de données et l'application GLPI, tandis que les utilisateurs accèdent à l'interface via un navigateur web. L'administration et la configuration de GLPI se font à travers une interface intuitive et conviviale.
+
+            Lors de la mise en place de GLPI, il est important de personnaliser les paramètres selon les besoins de l'organisation, tels que la structure des catégories, les champs personnalisés, les notifications, etc. De plus, GLPI peut être intégré à d'autres outils tels que les annuaires LDAP, les systèmes de surveillance, les outils de déploiement logiciel, ce qui améliore son potentiel et sa capacité d'intégration dans l'écosystème informatique existant.
+
+            En résumé, GLPI est une solution complète de gestion de parc informatique et de service desk, offrant une interface centralisée pour gérer les actifs, suivre les demandes d'assistance et améliorer l'efficacité de la gestion des ressources informatiques. Son caractère open source et modulaire en fait une solution flexible et adaptable aux besoins spécifiques de chaque organisation.">
+            En savoir plus
+        </button>
+    </div>
+    <div class="card">
+        <h2>API POKEMON</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Image 2">
+        <p></p>
+        <button class="popup-button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="openPopup(this)" data-title="API POKEMON" data-content="Pour créer une API Pokedex en utilisant React, nous allons suivre quelques étapes. Tout d'abord, nous aurons besoin des données des Pokémon, que nous pouvons obtenir à partir d'une source telle que l'API Pokemon. Ensuite, nous allons créer les composants React nécessaires pour afficher les informations des Pokémon.
+
+            Premièrement, nous devons configurer notre projet React. Assurez-vous d'avoir Node.js installé, puis créez un nouveau projet React à l'aide de Create React App. Ouvrez votre terminal et exécutez la commande suivante :
+
+            lua
+
+            npx create-react-app pokedex
+
+            Cela créera un nouveau dossier appelé 'pokedex' contenant la structure de base d'un projet React.
+
+            Ensuite, nous allons installer les dépendances nécessaires pour notre projet. Dans le terminal, naviguez vers le dossier du projet en utilisant la commande suivante :
+
+            bash
+
+            cd pokedex
+
+            Ensuite, installez les dépendances suivantes :
+
+            npm install axios react-router-dom
+
+            Maintenant que notre projet est configuré, nous pouvons commencer à écrire notre code. Créez un fichier appelé 'PokemonList.js' dans le dossier 'src' de votre projet.
+
+            Dans 'PokemonList.js', nous allons importer les dépendances nécessaires et créer notre composant PokemonList. Ce composant sera responsable de l'affichage de la liste des Pokémon. Nous utiliserons Axios pour effectuer des requêtes à l'API Pokemon et récupérer les données des Pokémon.
+
+            Dans notre composant PokemonList, nous allons effectuer une requête GET à l'API Pokemon pour obtenir la liste des Pokémon. Une fois que nous avons les données des Pokémon, nous pouvons les afficher dans une liste à l'aide des fonctionnalités de rendu de React.">
+            En savoir plus
+        </button>
+    </div>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-close" onclick="closePopup()">X</div>
+    <div class="popup-content">
+        <h2 id="popup-title"></h2>
+        <p id="popup-content-text"></p>
+    </div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+<script>
+    function openPopup(button) {
+        var title = button.getAttribute("data-title");
+        var content = button.getAttribute("data-content");
+        document.getElementById("popup-title").textContent = title;
+        document.getElementById("popup-content-text").textContent = content;
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+</script>
